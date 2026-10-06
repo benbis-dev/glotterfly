@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable", "WebWorker"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@glotterfly/auth-siwc": ["packages/auth-siwc/src/index.ts"],
+      "@glotterfly/dom": ["packages/dom/src/index.ts"],
+      "@glotterfly/openai-transport": ["packages/openai-transport/src/index.ts"],
+      "@glotterfly/protocol": ["packages/protocol/src/index.ts"],
+      "@glotterfly/translation": ["packages/translation/src/index.ts"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible Glotterfly bug using synthetic/public data.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, OAuth callback URLs, or private webpage content. Use SECURITY.md for vulnerabilities."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Prefer a minimal synthetic HTML fixture or public test page.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser/version
+    validations:
+      required: true

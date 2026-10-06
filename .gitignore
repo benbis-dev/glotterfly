@@ -1,0 +1,17 @@
+node_modules/
+.pnpm-store/
+.DS_Store
+*.log
+coverage/
+playwright-report/
+test-results/
+apps/extension/.output/
+apps/extension/.wxt/
+apps/extension/.env*
+!.env.example
+
+# Local OMP plugin installation state
+.omp/plugins/
+
+# Local AXIOLINT analysis state
+.axiolint/

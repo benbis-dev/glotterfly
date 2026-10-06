@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose a focused product or engineering improvement.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Permission/privacy impact
+      description: Note any new site access, persisted data, telemetry, or external service.

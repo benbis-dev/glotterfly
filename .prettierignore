@@ -1,0 +1,8 @@
+node_modules
+coverage
+playwright-report
+test-results
+apps/extension/.output
+apps/extension/.wxt
+pnpm-lock.yaml
+LICENSE

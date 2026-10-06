@@ -1,0 +1,40 @@
+{
+  "name": "glotterfly",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open-source webpage translation powered directly by your ChatGPT plan.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@12.8.2+sha512.a5941679663d952c5f0ecc38ba98af98b4dc01b95780354f6894f2f873973cef2f7e2989d7db3ee5393938ae21f62fe06bcdf685d475ddad829a62095d2b8b11",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @glotterfly/extension dev",
+    "build": "pnpm --filter @glotterfly/extension build",
+    "zip": "pnpm --filter @glotterfly/extension zip",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm build && playwright test",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run --no-ci"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.62.1",
+    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/git": "11.0.1",
+    "@types/node": "26.6.3",
+    "eslint": "10.11.0",
+    "prettier": "3.9.9",
+    "semantic-release": "25.0.9",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.71.0",
+    "vitest": "5.0.3"
+  }
+}

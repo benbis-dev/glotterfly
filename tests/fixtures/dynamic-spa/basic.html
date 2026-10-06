@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <main id="app"><p>Initial content.</p></main>
+    <script>
+      setTimeout(() => {
+        const p = document.createElement("p");
+        p.textContent = "Added later.";
+        document.querySelector("#app").append(p);
+      }, 10);
+    </script>
+  </body>
+</html>

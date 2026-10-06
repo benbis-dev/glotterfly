@@ -1,0 +1,24 @@
+{
+  "name": "@glotterfly/extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run-wxt.mjs dev",
+    "build": "node scripts/run-wxt.mjs build",
+    "zip": "wxt zip",
+    "prepare": "wxt prepare",
+    "typecheck": "wxt prepare && tsc --noEmit"
+  },
+  "dependencies": {
+    "@glotterfly/auth-siwc": "workspace:*",
+    "@glotterfly/dom": "workspace:*",
+    "@glotterfly/openai-transport": "workspace:*",
+    "@glotterfly/protocol": "workspace:*",
+    "@glotterfly/translation": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "wxt": "0.21.4"
+  }
+}
